@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department - Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .contact-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-xl font-bold">CSE Department</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="about.html" class="hover:text-gray-300">About Us</a>
+                <a href="faculty.html" class="hover:text-gray-300">Faculty</a>
+                <a href="programs.html" class="hover:text-gray-300">Programs</a>
+                <a href="research.html" class="hover:text-gray-300">Research</a>
+                <a href="students.html" class="hover:text-gray-300">Students</a>
+                <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-3 space-y-2 bg-gray-700">
+            <a href="index.html" class="block hover:text-gray-300">Home</a>
+            <a href="about.html" class="block hover:text-gray-300">About Us</a>
+            <a href="faculty.html" class="block hover:text-gray-300">Faculty</a>
+            <a href="programs.html" class="block hover:text-gray-300">Programs</a>
+            <a href="research.html" class="block hover:text-gray-300">Research</a>
+            <a href="students.html" class="block hover:text-gray-300">Students</a>
+            <a href="contact.html" class="block hover:text-gray-300">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Contact Overview -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Get in Touch</h2>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+                We’re here to answer your questions about our programs, research, or opportunities. Reach out to us via email, phone, or visit our campus.
+            </p>
+        </div>
+    </section>
+
+    <!-- Original Contact Us Section (Updated) -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Contact Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow contact-card">
+                    <h3 class="text-lg font-semibold mb-4">Department Office</h3>
+                    <p class="text-gray-700">Email: cse@university.edu</p>
+                    <p class="text-gray-700">Phone: (123) 456-7890</p>
+                    <p class="text-gray-700">Address: 123 University Ave, Tech City, TC 12345</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow contact-card">
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <p class="text-gray-700 mb-4">Follow us on social media for updates and events.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Twitter</a>
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">LinkedIn</a>
+                        <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Send Us a Message</h2>
+            <div class="bg-white p-6 rounded-lg shadow max-w-2xl mx-auto">
+                <p class="text-gray-700 mb-4">Fill out the form below to get in touch with us.</p>
+                <div class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Submit</button>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">Note: This is a placeholder form. Please contact us via email for inquiries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Directory -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Faculty Directory</h2>
+            <p class="text-base md:text-lg text-gray-700 mb-6 text-center max-w-3xl mx-auto">
+                Connect with our faculty for academic or research inquiries.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow contact-card">
+                    <h3 class="text-lg font-semibold mb-2">Dr. John Doe</h3>
+                    <p class="text-gray-600">Professor, Artificial Intelligence</p>
+                    <p class="text-gray-700">Email: john.doe@university.edu</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow contact-card">
+                    <h3 class="text-lg font-semibold mb-2">Dr. Jane Smith</h3>
+                    <p class="text-gray-600">Associate Professor, Data Science</p>
+                    <p class="text-gray-700">Email: jane.smith@university.edu</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow contact-card">
+                    <h3 class="text-lg font-semibold mb-2">Dr. Maria Gonzalez</h3>
+                    <p class="text-gray-600">Assistant Professor, Cybersecurity</p>
+                    <p class="text-gray-700">Email: maria.gonzalez@university.edu</p>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <a href="faculty.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View All Faculty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Visit Us</h2>
+            <p class="text-base md:text-lg text-gray-700 mb-6 text-center max-w-3xl mx-auto">
+                We welcome prospective students, researchers, and collaborators to visit our campus. Schedule a tour or attend an open house.
+            </p>
+            <div class="bg-white p-6 rounded-lg shadow max-w-3xl mx-auto">
+                <img src="https://via.placeholder.com/600x300?text=Campus+Map" alt="Campus Map" class="w-full h-64 object-cover rounded-lg mb-4">
+                <p class="text-gray-700">Address: 123 University Ave, Tech City, TC 12345</p>
+                <div class="mt-4">
+                    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-2">How can I apply to the CSE program?</h3>
+                    <p class="text-gray-700">Visit our Programs page for application details or contact us at cse@university.edu.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-2">What research opportunities are available?</h3>
+                    <p class="text-gray-700">Explore our Research page or reach out to faculty for undergraduate and graduate research opportunities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-2">How do I join a student organization?</h3>
+                    <p class="text-gray-700">Check out our Students page for information on clubs and how to get involved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2025 Department of Computer Science & Engineering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

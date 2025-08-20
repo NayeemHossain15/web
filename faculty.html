@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department - Faculty</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .faculty-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="text-xl font-bold">CSE Department</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="about.html" class="hover:text-gray-300">About Us</a>
+                <a href="faculty.html" class="hover:text-gray-300">Faculty</a>
+                <a href="programs.html" class="hover:text-gray-300">Programs</a>
+                <a href="research.html" class="hover:text-gray-300">Research</a>
+                <a href="students.html" class="hover:text-gray-300">Students</a>
+                <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-3 space-y-2 bg-gray-700">
+            <a href="index.html" class="block hover:text-gray-300">Home</a>
+            <a href="about.html" class="block hover:text-gray-300">About Us</a>
+            <a href="faculty.html" class="block hover:text-gray-300">Faculty</a>
+            <a href="programs.html" class="block hover:text-gray-300">Programs</a>
+            <a href="research.html" class="block hover:text-gray-300">Research</a>
+            <a href="students.html" class="block hover:text-gray-300">Students</a>
+            <a href="contact.html" class="block hover:text-gray-300">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Faculty Overview -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Our Faculty</h2>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+                Our distinguished faculty are leaders in their fields, driving innovation in computer science and engineering through groundbreaking research, exceptional teaching, and dedicated mentorship.
+            </p>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Meet Our Faculty</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden faculty-card">
+                    <img src="./image/t1.jpg" alt="Faculty 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Dr. John Doe</h3>
+                        <p class="text-gray-600">Professor, Artificial Intelligence</p>
+                        <p class="text-sm text-gray-500 mt-2">Expert in machine learning and neural networks.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden faculty-card">
+                    <img src="./image//t2.jpg" alt="Faculty 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Dr. Jane Smith</h3>
+                        <p class="text-gray-600">Associate Professor, Data Science</p>
+                        <p class="text-sm text-gray-500 mt-2">Specializes in big data analytics and visualization.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden faculty-card">
+                    <img src="./image/t3.jpg" alt="Faculty 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Dr. Alan Turing</h3>
+                        <p class="text-gray-600">Professor, Theoretical Computing</p>
+                        <p class="text-sm text-gray-500 mt-2">Renowned for contributions to computational theory.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden faculty-card">
+                    <img src="./image/t2.jpg" alt="Faculty 4" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Dr. Maria Gonzalez</h3>
+                        <p class="text-gray-600">Assistant Professor, Cybersecurity</p>
+                        <p class="text-sm text-gray-500 mt-2">Focuses on network security and cryptography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Research Areas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-2">Artificial Intelligence</h3>
+                    <p class="text-gray-700">Advancing machine learning, computer vision, and natural language processing.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-2">Cybersecurity</h3>
+                    <p class="text-gray-700">Developing solutions for secure systems and data protection.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-2">Data Science</h3>
+                    <p class="text-gray-700">Harnessing big data for actionable insights and decision-making.</p>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <a href="research.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Explore All Research</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Awards & Recognition</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold">Dr. Jane Smith - IEEE Fellow</h3>
+                    <p class="text-gray-600">Recognized for pioneering work in data science, 2024.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold">Dr. John Doe - ACM Award</h3>
+                    <p class="text-gray-600">Honored for contributions to AI algorithms, 2023.</p>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View All Awards</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visiting Faculty & Guest Lecturers -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Visiting Faculty & Guest Lecturers</h2>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-6">
+                We regularly host distinguished scholars and industry experts to share their insights and enrich our academic community.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden faculty-card">
+                    <img src="https://via.placeholder.com/300" alt="Visiting Faculty" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Dr. Sarah Lee</h3>
+                        <p class="text-gray-600">Visiting Professor, Cloud Computing</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden faculty-card">
+                    <img src="https://via.placeholder.com/300" alt="Guest Lecturer" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Mr. David Brown</h3>
+                        <p class="text-gray-600">Guest Lecturer, Software Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Faculty -->
+    <section class="py-12 bg-blue-600 text-white text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Join Our Faculty</h2>
+            <p class="text-base md:text-lg mb-6">We are always looking for passionate educators and researchers to join our team. Explore open positions and become part of our vibrant community.</p>
+            <a href="contact.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100">View Opportunities</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Department of Computer Science & Engineering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSE Department - About Us</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="font-sans">
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-white sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="text-xl font-bold">CSE Department</a>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="about.html" class="hover:text-gray-300">About Us</a>
+        <a href="faculty.html" class="hover:text-gray-300">Faculty</a>
+        <a href="programs.html" class="hover:text-gray-300">Programs</a>
+        <a href="research.html" class="hover:text-gray-300">Research</a>
+        <a href="students.html" class="hover:text-gray-300">Students</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" 
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-3 space-y-2 bg-gray-700">
+      <a href="index.html" class="block hover:text-gray-300">Home</a>
+      <a href="about.html" class="block hover:text-gray-300">About Us</a>
+      <a href="faculty.html" class="block hover:text-gray-300">Faculty</a>
+      <a href="programs.html" class="block hover:text-gray-300">Programs</a>
+      <a href="research.html" class="block hover:text-gray-300">Research</a>
+      <a href="students.html" class="blockлогут:text-gray-300">Students</a>
+      <a href="contact.html" class="block hover:text-gray-300">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- About Us Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">About Us</h2>
+      <p class="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+        The Department of Computer Science & Engineering is committed to advancing the frontiers 
+        of computing through cutting-edge research, innovative teaching, and impactful community 
+        engagement. Our mission is to prepare students for successful careers in technology and 
+        contribute to solving global challenges through interdisciplinary collaboration and innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Our Mission & Vision</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Mission</h3>
+          <p class="text-gray-700">To empower students with the knowledge, skills, and ethical foundation to innovate and lead in the field of computer science, fostering solutions to global challenges.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Vision</h3>
+          <p class="text-gray-700">To be a global leader in computer science education and research, driving technological advancements and societal impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History of the Department -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">History of the Department</h2>
+      <p class="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+        Established in 1980, the Department of Computer Science & Engineering has grown from a small program to a leading center for technological innovation. Over the decades, we have produced thousands of graduates who have made significant contributions to academia, industry, and society. Key milestones include the launch of our Ph.D. program in 1995 and the establishment of our AI Research Lab in 2010.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Our Values</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h3 class="text-lg font-semibold mb-2">Innovation</h3>
+          <p class="text-gray-700">Pushing the boundaries of technology through creative solutions.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h3 class="text-lg font-semibold mb-2">Excellence</h3>
+          <p class="text-gray-700">Striving for the highest standards in education and research.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h3 class="text-lg font-semibold mb-2">Inclusivity</h3>
+          <p class="text-gray-700">Fostering a diverse and welcoming community for all.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow text-center">
+          <h3 class="text-lg font-semibold mb-2">Impact</h3>
+          <p class="text-gray-700">Creating solutions that make a positive difference in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Team -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Leadership Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="./image//chair.jpg" alt="Chair" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Dr. Rahat Hossain Faisal</h3>
+            <p class="text-gray-600">Chairman, Department of Department of Computer Science and Engineering</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://via.placeholder.com/300" alt="Vice Chair" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Dr. Robert Kim</h3>
+            <p class="text-gray-600">Vice Chair</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://via.placeholder.com/300" alt="Director" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Dr. Lisa Wong</h3>
+            <p class="text-gray-600">Director of Research</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Engagement -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Community Engagement</h2>
+      <p class="text-base md:text-lg text-gray-700 leading-relaxed text-justify mb-6">
+        Our department is dedicated to making a positive impact beyond the classroom. We organize coding bootcamps for local schools, host open-source software initiatives, and partner with community organizations to promote STEM education.
+      </p>
+      <div class="text-center">
+        <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Get Involved</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <div class="container mx-auto px-4">
+      <p>&copy; 2025 Department of Computer Science & Engineering. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
